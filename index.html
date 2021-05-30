@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькуляторы</title>
+</head>
+
+<body>
+    <h1 class="main-title">Калькуляторы фигур</h1>
+    <div class="calc-container">
+        <div class="calc square-calc">
+
+            <h2 class="calc-title">Калькулятор пощади и периметра квадрата</h2>
+
+            <p class="hint">Введите длину стороны квадрата</p>
+
+            <div class="inputs">
+                <input type="number" name="length" id="square-side"  autofocus>
+                <button class="btn" id="square-btn">ок</button>
+            </div>
+
+            <div class="answers">
+                <p>
+                    Площадь квадрата равна: <span id="square-area-result">0</span>
+                </p>
+                <p>
+                    Периметр квадрата равен: <span id="square-perimeter-result">0</span>
+                </p>
+            </div>
+        </div><!--End of cquare calc-->
+
+        <div class="calc rectangle-calc">
+
+            <h2 class="calc-title">Калькулятор пощади и периметра прямоугольника</h2>
+         
+            <p class="hint">Введите ширину и длину прямоугольника</p>
+
+            <div class="inputs">
+                <label for="width">Ш: 
+                    <input type="number" name="width" id="rect-width-side" min="1">
+                </label>
+                <label for="height">Д: 
+                    <input type="number" name="height" id="rect-height-side" min="1" >
+                </label>
+                
+                <button class="btn" id="rect-btn">ок</button>
+            </div>
+
+            <div class="answers">
+                <p>
+                    Площадь прямоугольника равна: <span id="rect-area-answer">0</span>
+                </p>
+                <p>
+                    Периметр прямоугольника равен: <span id="rect-perimeter-answer">0</span>
+                </p>
+            </div>
+        </div><!--End of rect calc-->
+
+        <div class="calc circle-calc">
+
+            <h2 class="calc-title">Калькулятор пощади круга и длины окружности</h2>
+
+            <p class="hint">Введите радиус круга (окружности)</p>
+
+            <div class="inputs">
+                <input type="number" name="radius" id="radius" min="1">
+                <button class="btn" id="circle-btn">ок</button>
+            </div>
+
+            <div class="answers">
+                <p>
+                    Площадь круга равна: <span id="answer-circle-area">0</span>
+                </p>
+                <p class="answer-perimeter">
+                    Длина окружности равна: <span id="answer-circle-perimeter">0</span>
+                </p>
+            </div>
+        </div><!--End of circle calc-->
+
+        <div class="calc triangle-calc">
+
+            <h2 class="calc-title">Калькулятор пощади треугольника по трем сторонам</h2>
+
+            <p class="hint">Введите длины сторон a, b и c</p>
+
+            <div class="inputs">
+                <label for="side-a">
+                    A: <input type="number" name="side-a" id="side-a"  min="1">
+                </label>
+                <label for="side-b">
+                    B: <input type="number" name="side-b" id="side-b"  min="1">
+                </label>
+                <label for="side-c">
+                    C: <input type="number" name="side-c" id="side-c"  min="1">
+                </label>
+            
+                <button class="btn" id="triangle-btn">ок</button>
+            </div>
+
+            <div class="answers">
+                <p>
+                    Площадь треугольника равна: <span id="triangle-answer">0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
